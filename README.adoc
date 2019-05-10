@@ -1,0 +1,19 @@
+== 给MS Windows的git bash 安装 make工具
+
+- Go to https://sourceforge.net/projects/ezwinports/files/[ezwinports]
+- Download `make-4.1-2-without-guile-w32-bin.zip` (get the version without guile).
+- sourceforge无法访问可以试下这个 http://sourceforge.mirrorservice.org/e/ez/ezwinports/make-4.2.1-without-guile-w32-bin.zip[链接] 。
+
+
+- Extract zip.
+- Copy the contents to your `Git\mingw64\` merging the folders, but do NOT overwrite/replace any existing files. 
+
+
+== 使用示例
+
+[source,bash]
+----
+$ make distclean
+$ make PRJ_CONFIG=vkbs1
+
+----
